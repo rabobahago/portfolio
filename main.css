@@ -92,6 +92,9 @@ nav {
   position: fixed;
   right: 0;
   top: 0;
+  background: rgba(55, 55, 55, 0.5);
+  padding: 1.3rem;
+  border-radius: 0% 0% 0% 40%;
 }
 .profile-pic {
   height: 9rem;
@@ -99,4 +102,38 @@ nav {
   border-radius: 50%;
   display: block;
   margin: 1.5rem 0;
+}
+.caption {
+  display: block;
+}
+.nav-list {
+  width: 24rem;
+  height: 100vh;
+  background-color: #222222;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  z-index: 998;
+  transition: all 650ms ease-in-out;
+}
+
+.nav-list.active {
+  right: 0;
+}
+.nav-item {
+  margin: 1.2rem 0;
+}
+.nav-link {
+  opacity: 1;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #cecece;
+  letter-spacing: 1.5px;
+}
+.nav-link:hover {
+  color: rgba(249, 105, 14, 1);
 }
