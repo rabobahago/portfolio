@@ -128,7 +128,7 @@ nav {
   margin: 1.2rem 0;
 }
 .nav-link {
-  opacity: 1;
+  opacity: 0;
   font-size: 1.3rem;
   text-transform: uppercase;
   color: #cecece;
@@ -136,4 +136,28 @@ nav {
 }
 .nav-link:hover {
   color: rgba(249, 105, 14, 1);
+}
+.toggle {
+  background: none;
+}
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px) scalex(2);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px) scalex(2);
+  margin-left: 0px;
+}
+
+@keyframes navLinkAnimate {
+  from {
+    opacity: 0;
+    transform: translate(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0px);
+  }
 }
